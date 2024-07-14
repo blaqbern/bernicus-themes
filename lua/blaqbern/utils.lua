@@ -1,7 +1,8 @@
 local utils = {}
 
 local parse_hex_color = function(hex_color)
-	local color = string.gsub(hex_color, "#", "")
+	print("hex_color => " .. hex_color)
+	local color = string.sub(hex_color, 2)
 	print("color => " .. color)
 	return {
 		r = "",
