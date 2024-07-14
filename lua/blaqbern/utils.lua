@@ -1,7 +1,7 @@
 local utils = {}
 
 local parse_hex_color = function(hex_color)
-	local color = hex_color:sub(2)
+	local color = string.sub(hex_color, 2)
 	return {
 		r = tonumber(color:sub(1, 2), 16),
 		g = tonumber(color:sub(3, 4), 16),
@@ -26,6 +26,8 @@ local lerp = function(initial, final, amount)
 end
 
 function utils.blend(color_1, color_2, amount)
+	print("color_1 => " .. color_1)
+	print("color_2 => " .. color_2)
 	local rgb_1 = parse_hex_color(color_1)
 	local rgb_2 = parse_hex_color(color_2)
 
