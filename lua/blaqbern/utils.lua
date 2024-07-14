@@ -13,12 +13,6 @@ local get_hex_color = function(rgb)
 	local r = string.format("%x", rgb.r)
 	local g = string.format("%x", rgb.g)
 	local b = string.format("%x", rgb.b)
-	print("r => " .. r)
-	print("rgb.r => " .. rgb.r)
-	print("g => " .. g)
-	print("rgb.g => " .. rgb.g)
-	print("b => " .. b)
-	print("rgb.b => " .. rgb.b)
 	return "#" .. r .. g .. b
 end
 
