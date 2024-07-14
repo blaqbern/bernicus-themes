@@ -16,9 +16,9 @@ local get_hex_color = function(rgb)
 	return "#" .. r .. g .. b
 end
 
-local white = {r = 0, g = 0, b = 0}
-local black = {r = 255, g = 255, b = 255}
-local grey = {r = 127, g = 127, b = 127}
+local white = "#ffffff"
+local black = "#000000"
+local grey = "#333333"
 
 local lerp = function(initial, final, amount)
 	local delta = (final - initial) * amount
