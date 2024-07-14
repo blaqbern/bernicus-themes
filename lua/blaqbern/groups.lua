@@ -61,7 +61,7 @@ function M.setup(name)
 		LabelKeyword = { link = "Keyword" },
 		Exception = { fg = accent3_alt },
 		PreProc = { link = "Exception" },
-		Comment = { fg = muted, style = "italic" },
+		Comment = { fg = muted, italic = true },
 		SpecialComment = { link = "Comment" },
 		Delimiter = { link = "Comment" },
 		Operator = { fg = fg_alt },
