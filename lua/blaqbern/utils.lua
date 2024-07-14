@@ -4,10 +4,15 @@ local parse_hex_color = function(hex_color)
 	local color = string.gsub(hex_color, "#", "")
 	print("color => " .. color)
 	return {
-		r = tonumber(color:byte(1, 2)),
-		g = tonumber(color:byte(3, 4)),
-		b = tonumber(color:byte(5, 6)),
+		r = "",
+		g = "",
+		b = "",
 	}
+	-- return {
+	-- 	r = tonumber(color:byte(1, 2)),
+	-- 	g = tonumber(color:byte(3, 4)),
+	-- 	b = tonumber(color:byte(5, 6)),
+	-- }
 end
 
 local get_hex_color = function(rgb)
