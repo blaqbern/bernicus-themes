@@ -2,6 +2,7 @@ local utils = {}
 
 local parse_hex_color = function(hex_color)
 	local color = string.gsub(hex_color, "#", "")
+	print("color => " .. color)
 	return {
 		r = tonumber(color:byte(1, 2)),
 		g = tonumber(color:byte(3, 4)),
