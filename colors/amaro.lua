@@ -1,3 +1,2 @@
 package.loaded["amaro"] = nil
-print(require("theme").test)
--- require("theme").setup { name = "amaro" }
+require("blaqbern").setup { name = "amaro" }

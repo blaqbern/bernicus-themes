@@ -14,6 +14,4 @@ function M.setup(opts)
 	end
 end
 
-M.test = "testing testing"
-
 return M
