@@ -10,12 +10,15 @@ local parse_hex_color = function(hex_color)
 end
 
 local get_hex_color = function(rgb)
-	local r = string.format("%x", rgb.r * 255)
-	local g = string.format("%x", rgb.g * 255)
-	local b = string.format("%x", rgb.b * 255)
+	local r = string.format("%x", rgb.r / 255)
+	local g = string.format("%x", rgb.g / 255)
+	local b = string.format("%x", rgb.b / 255)
 	print("r => " .. r)
+	print("rgb.r => " .. rgb.r)
 	print("g => " .. g)
+	print("rgb.g => " .. rgb.g)
 	print("b => " .. b)
+	print("rgb.b => " .. rgb.b)
 	return "#" .. r .. g .. b
 end
 
