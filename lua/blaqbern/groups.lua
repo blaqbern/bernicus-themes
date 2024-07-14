@@ -1,7 +1,7 @@
 local M = {}
 
 function M.setup(name)
-	local palette = require("blaqbern.palattes." .. name)
+	local palette = require("blaqbern.palettes." .. name)
 	local utils = require("blaqbern.utils")
 
 	local bg = palette.black.normal
