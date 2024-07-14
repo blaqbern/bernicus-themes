@@ -1,11 +1,11 @@
 local utils = {}
 
 local parse_hex_color = function(hex_color)
-	local color = string.sub(hex_color, 2)
+	local color = hex_color:sub(2)
 	return {
-		r = tonumber(color:byte(1, 2)),
-		g = tonumber(color:byte(3, 4)),
-		b = tonumber(color:byte(5, 6)),
+		r = tonumber(color:sub(1, 2), 16),
+		g = tonumber(color:sub(3, 4), 16),
+		b = tonumber(color:sub(5, 6), 16),
 	}
 end
 
