@@ -13,6 +13,9 @@ local get_hex_color = function(rgb)
 	local r = string.format("%x", rgb.r * 255)
 	local g = string.format("%x", rgb.g * 255)
 	local b = string.format("%x", rgb.b * 255)
+	print("r => " .. r)
+	print("g => " .. g)
+	print("b => " .. b)
 	return "#" .. r .. g .. b
 end
 
@@ -26,8 +29,6 @@ local lerp = function(initial, final, amount)
 end
 
 function utils.blend(color_1, color_2, amount)
-	print("color_1 => " .. color_1)
-	print("color_2 => " .. color_2)
 	local rgb_1 = parse_hex_color(color_1)
 	local rgb_2 = parse_hex_color(color_2)
 
