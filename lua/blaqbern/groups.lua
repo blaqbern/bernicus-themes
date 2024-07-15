@@ -1,6 +1,10 @@
 local M = {}
 
 function M.setup(name)
+	local red = "#ff0000"
+	local green = "#00ff00"
+	local blue = "#0000ff"
+
 	local palette = require("blaqbern.palettes." .. name)
 	local utils = require("blaqbern.utils")
 
@@ -30,7 +34,7 @@ function M.setup(name)
 	local warning = "#ff842b"
 	-- local info = "#0045cf"
 
-	return {
+	local base = {
 		Pmenu = { fg = fg, bg = bg_dark2},
 		PmenuSel = { fg = keyword_alt, bg = bg_dark2, bold = true },
 		PmenuThumb = { bg = muted },
@@ -90,6 +94,30 @@ function M.setup(name)
 		Type = { fg = accent3 },
 		Funtion = { fg = accent3 },
 	}
+
+	-- Cmp: github.com/hrsh7th/nvim-cmp
+	-- local cmp = {
+	-- 	CmpDocumentation       = { fg = blue, bg = red },
+	-- 	CmpDocumentationBorder = { fg = green },
+	-- 	-- CmpItemAbbr            = { fg =  },
+	-- 	-- CmpItemAbbrDeprecated  = { fg = },
+	-- 	-- CmpItemAbbrMatch       = { fg = },
+	-- 	-- CmpItemAbbrMatchFuzzy  = { fg = },
+	-- 	-- CmpItemMenu            = { fg = },
+
+	-- 	-- CmpItemKind            = { fg = },
+	-- 	-- CmpItemKindClass       = { fg = },
+	-- 	-- CmpItemKindFunction    = { fg = },
+	-- 	-- CmpItemKindInterface   = { fg = },
+	-- 	-- CmpItemKindKeyword     = { fg = },
+	-- 	-- CmpItemKindMethod      = { fg = },
+	-- 	-- CmpItemKindProperty    = { fg = },
+	-- 	-- CmpItemKindText        = { fg = },
+	-- 	-- CmpItemKindUnit        = { fg = },
+	-- 	-- CmpItemKindVariable    = { fg = },
+	-- }
+
+	return base
 end
 
 return M
