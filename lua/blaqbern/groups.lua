@@ -5,13 +5,13 @@ function M.setup(name)
 	local utils = require("blaqbern.utils")
 
 	local bg = palette.black.normal
-	local bg_dark1 = utils.darken(bg, 0.05)
+	local bg_dark1 = utils.darken(bg, 0.03)
 	local bg_dark2 = utils.darken(bg, 0.2)
-	local bg_dark3 = utils.darken(bg, 0.3)
-	local bg_light = utils.lighten(bg, 0.2)
+	local bg_dark3 = utils.darken(bg, 0.5)
+	local bg_light = utils.lighten(bg, 0.1)
 	local fg = palette.white.normal
 	local fg_alt = palette.white.bright
-	local muted = utils.dull(fg, 0.2)
+	local muted = utils.dull(fg, 0.5)
 	local keyword = palette.blue.normal
 	local keyword_alt = palette.blue.bright
 	local str = palette.green.normal
@@ -27,7 +27,7 @@ function M.setup(name)
 
 	-- local alert = "#d91e28"
 	-- local success = "##23a147"
-	-- local warning = "#ff842b"
+	local warning = "#ff842b"
 	-- local info = "#0045cf"
 
 	return {
@@ -35,37 +35,58 @@ function M.setup(name)
 		PmenuSel = { fg = keyword_alt, bg = bg_dark2, bold = true },
 		PmenuThumb = { bg = muted },
 		PmenuSBar = { bg = bg_light},
+
+		SpellBad = { sp = warning, underdotted = true },
+		SpellCap = { link = "SpellBad" },
+		SpellRare = { link = "SpellBad" },
+		SpellLocal = { link = "SpellBad" },
+
 		ColorColumn = { bg = bg_dark1 },
-		MatchParen = { reverse = true },
+		MatchParen = { fg = accent1 , bold = true },
 		Visual = { bg = bg_light },
+
 		Search = { reverse = true },
 		IncSearch = { link = "Search" },
+
+		StatusLine = { fg = fg, bg = bg },
+		StatusLineNC = { fg = muted },
+
 		LineNr = { fg = fg_alt, bg = bg_dark2 },
 		CursorLine = { bg = bg },
 		CursorLineNr = { fg = accent1_alt, bg = bg_dark2, bold = true },
+
 		VertSplit = { fg = bg, bg = bg },
 		SignColumn = { bg = bg_dark2 },
+
 		Title = { fg = accent3_alt, bold = true },
+
 		Normal = { fg = fg, bg = bg },
 		NonText = { fg = bg_dark3 },
+
 		String = { fg = str },
 		Character = { link = "String" },
+
 		Number = { fg = accent1 },
 		FloatNumber = { link = "Number" },
 		BooleanNumber = { link = "Number" },
 		ConstantNumber = { link = "Number" },
+
 		Keyword = { fg = keyword },
 		StatementKeyword = { link = "Keyword" },
 		ConditionalKeyword = { link = "Keyword" },
 		RepeatKeyword = { link = "Keyword" },
 		LabelKeyword = { link = "Keyword" },
+
 		Exception = { fg = accent3_alt },
 		PreProc = { link = "Exception" },
+
 		Comment = { fg = muted, italic = true },
 		SpecialComment = { link = "Comment" },
 		Delimiter = { link = "Comment" },
+
 		Operator = { fg = fg_alt },
 		Special = { link = "Operator" },
+
 		Type = { fg = accent3 },
 		Funtion = { fg = accent3 },
 	}
