@@ -5,10 +5,10 @@ M.setup = function (colors)
 
 	return {
 		["@variable"]                = { fg = colors.fg },
-		["@variable.builtin"]        = { fg = colors.accent2 },
-		["@variable.parameter"]      = { fg = colors.accent1 },
-		["@variable.parameter.type"] = { fg = colors.accent1_alt },
-		["@variable.member"]         = { fg = colors.accent1_alt },
+		["@variable.builtin"]        = { fg = colors.accent1 },
+		["@variable.parameter"]      = { fg = colors.accent4 },
+		["@variable.parameter.type"] = { fg = colors.accent4 },
+		["@variable.member"]         = { fg = colors.accent4 },
 
 		["@constant"]         = { fg = colors.accent3 },
 		["@constant.builtin"] = { fg = colors.accent3_alt },
