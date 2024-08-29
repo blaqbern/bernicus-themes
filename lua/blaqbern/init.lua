@@ -7,10 +7,12 @@ function M.setup(opts)
 	vim.o.termguicolors = true
 	vim.g.colors_name = opts.theme
 
-	local groups = require("blaqbern.groups").setup(opts.name)
+	local group_set = require("blaqbern.groups").setup(opts.name)
 
-	for group, hl in pairs(groups) do
-		vim.api.nvim_set_hl(0, group, hl)
+	for _, groups in pairs(group_set) do
+		for group, hl in pairs(groups) do
+			vim.api.nvim_set_hl(0, group, hl)
+		end
 	end
 end
 

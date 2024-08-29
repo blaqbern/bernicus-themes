@@ -10,9 +10,9 @@ local parse_hex_color = function(hex_color)
 end
 
 local get_hex_color = function(rgb)
-	local r = string.format("%x", rgb.r)
-	local g = string.format("%x", rgb.g)
-	local b = string.format("%x", rgb.b)
+	local r = string.format("%02x", rgb.r)
+	local g = string.format("%02x", rgb.g)
+	local b = string.format("%02x", rgb.b)
 	return "#" .. r .. g .. b
 end
 
@@ -38,6 +38,6 @@ end
 
 function utils.lighten(color, amount) return utils.blend(color, white, amount) end
 function utils.darken(color, amount) return utils.blend(color, black, amount) end
-function utils.dull(color, amount) return utils.blend(color, grey, amount) end
+function utils.desaturate(color, amount) return utils.blend(color, grey, amount) end
 
 return utils
