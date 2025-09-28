@@ -11,7 +11,7 @@ M.setup = function (name)
     bg          = bg,
     bg_dark1    = utils.darken(bg, 0.03),
     bg_dark2    = utils.darken(bg, 0.2),
-    bg_dark3     = utils.darken(bg, 0.5),
+    bg_dark3    = utils.darken(bg, 0.5),
     bg_light    = utils.lighten(bg, 0.1),
     fg          = fg,
     fg_alt      = palette.w.bright,
@@ -29,7 +29,7 @@ M.setup = function (name)
     accent4     = palette.r.normal,
     accent4_alt = palette.r.bright,
 
-    white       = "#000000",
+    white       = "#ffffff",
     alert       = palette.alert or "#d91e28",
     success     = palette.success or "#23a147",
     warning     = palette.warning or "#ff842b",
