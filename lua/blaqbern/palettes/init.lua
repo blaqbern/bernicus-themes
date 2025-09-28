@@ -4,8 +4,8 @@ M.setup = function (name)
   local utils = require("blaqbern.utils")
   local palette = require("blaqbern.palettes." .. name)
 
-  local fg = palette.white.normal
-  local bg = palette.black.normal
+  local fg = palette.w.normal
+  local bg = palette.k.normal
 
   return {
     bg          = bg,
@@ -14,20 +14,20 @@ M.setup = function (name)
     bg_dark3     = utils.darken(bg, 0.5),
     bg_light    = utils.lighten(bg, 0.1),
     fg          = fg,
-    fg_alt      = palette.white.bright,
+    fg_alt      = palette.w.bright,
     muted       = utils.desaturate(fg, 0.5),
-    keyword     = palette.blue.normal,
-    keyword_alt = palette.blue.bright,
-    str         = palette.green.normal,
-    str_alt     = palette.green.bright,
-    accent1     = palette.cyan.normal,
-    accent1_alt = palette.cyan.bright,
-    accent2     = palette.yellow.normal,
-    accent2_alt = palette.yellow.bright,
-    accent3     = palette.magenta.normal,
-    accent3_alt = palette.magenta.bright,
-    accent4     = palette.red.normal,
-    accent4_alt = palette.red.bright,
+    keyword     = palette.b.normal,
+    keyword_alt = palette.b.bright,
+    str         = palette.g.normal,
+    str_alt     = palette.g.bright,
+    accent1     = palette.c.normal,
+    accent1_alt = palette.c.bright,
+    accent2     = palette.y.normal,
+    accent2_alt = palette.y.bright,
+    accent3     = palette.m.normal,
+    accent3_alt = palette.m.bright,
+    accent4     = palette.r.normal,
+    accent4_alt = palette.r.bright,
 
     white       = "#000000",
     alert       = palette.alert or "#d91e28",
