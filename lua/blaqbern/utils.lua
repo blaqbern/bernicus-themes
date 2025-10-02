@@ -1,4 +1,4 @@
-local utils = {}
+local M = {}
 
 local parse_hex_color = function(hex_color)
   local color = string.sub(hex_color, 2)
@@ -25,7 +25,7 @@ local lerp = function(initial, final, amount)
   return initial + delta
 end
 
-function utils.blend(color_1, color_2, amount)
+function M.blend(color_1, color_2, amount)
   local rgb_1 = parse_hex_color(color_1)
   local rgb_2 = parse_hex_color(color_2)
 
@@ -36,8 +36,8 @@ function utils.blend(color_1, color_2, amount)
   }
 end
 
-function utils.lighten(color, amount) return utils.blend(color, white, amount) end
-function utils.darken(color, amount) return utils.blend(color, black, amount) end
-function utils.desaturate(color, amount) return utils.blend(color, grey, amount) end
+function M.lighten(color, amount) return M.blend(color, white, amount) end
+function M.darken(color, amount) return M.blend(color, black, amount) end
+function M.desaturate(color, amount) return M.blend(color, grey, amount) end
 
-return utils
+return M

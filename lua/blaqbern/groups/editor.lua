@@ -33,9 +33,9 @@ M.setup = function(colors)
     MatchParen    = { fg = colors.accent1 , bold = true },
     MessageWindow = todo_hl,
     ModeMsg       = { fg = colors.accent2 },
-    MsgArea       = { link = "Normal" },
+    MsgArea       = { bg = colors.bg_dark1, fg = colors.fg },
     MoreMsg       = todo_hl,
-    NonText       = { fg = colors.bg_dark3 },
+    NonText       = { fg = colors.black },
     Normal        = { fg = colors.fg, bg = colors.bg },
     Pmenu         = { fg = colors.fg, bg = colors.bg_dark2},
     PmenuSel      = { fg = colors.keyword, bg = colors.bg_dark3, bold = true },
@@ -43,13 +43,13 @@ M.setup = function(colors)
     PmenuKindSel  = { link = "PmenuKind" },
     PmenuExtra    = { link = "Pmenu" },
     PmenuExtraSel = { link = "PmenuSel" },
-    PmenuSBar     = { bg = colors.bg_light},
+    PmenuSBar     = { bg = colors.bg_light2 },
     PmenuThumb    = { bg = colors.muted },
     PmenuMatch    = { fg = colors.fg_alt },
     PmenuMatchSel = { link = "PmenuMatch" },
     -- PopupNotification
     Question      = todo_hl,
-    QuickFixLine  = { bg = colors.bg_light },
+    QuickFixLine  = { bg = colors.bg_light2 },
     Search        = { reverse = true },
     CurSearch     = { link = "Search" },
     SpecialKey    = { fg = colors.fg_alt, bg = colors.bg_dark1 },
@@ -61,12 +61,12 @@ M.setup = function(colors)
     StatusLineNC  = { fg = colors.muted },
     -- StatusLineTerm
     -- StatusLineTermNC
-    TabLine       = { bg = colors.bg_light },
+    TabLine       = { bg = colors.bg_light1, fg = colors.muted },
     TablineFill   = { link = "TabLine" },
     TabLineSel    = { bg = colors.bg },
     -- Terminal
     Title         = { fg = colors.accent3_alt, bold = true },
-    Visual        = { bg = colors.bg_light },
+    Visual        = { bg = colors.bg_light2 },
     -- VisualNOS
     WarningMsg    = { fg = colors.white, bg = colors.warning },
     WildMenu      = { link = "IncSearch" },

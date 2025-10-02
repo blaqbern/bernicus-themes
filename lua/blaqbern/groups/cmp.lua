@@ -6,7 +6,7 @@ M.setup = function (colors)
     CmpItemAbbrDeprecated  = { fg = colors.muted },
     CmpItemAbbrMatch       = { fg = colors.accent1 },
     CmpItemAbbrMatchFuzzy  = { fg = colors.accent1_alt },
-    CmpItemMenu            = { fg = colors.fg, bg = colors.bg_light },
+    CmpItemMenu            = { fg = colors.fg, bg = colors.bg_light2 },
     CmpItemKind            = { fg = colors.accent2 },
     CmpItemKindClass       = { link = "CmpItemKindInterface" },
     CmpItemKindFunction    = { fg = colors.accent4 },
