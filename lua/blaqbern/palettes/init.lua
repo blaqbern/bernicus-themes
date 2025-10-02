@@ -9,8 +9,8 @@ M.setup = function (name)
 
   return {
     bg          = bg,
-    bg_dark1    = utils.darken(bg, 0.2),
-    bg_dark2    = utils.darken(bg, 0.4),
+    bg_dark1    = utils.darken(bg, 0.03),
+    bg_dark2    = utils.darken(bg, 0.2),
     bg_dark3    = utils.darken(bg, 1),
     bg_light    = utils.lighten(bg, 0.1),
     fg          = fg,
