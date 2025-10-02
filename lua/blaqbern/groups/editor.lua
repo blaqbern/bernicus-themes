@@ -61,7 +61,7 @@ M.setup = function(colors)
     StatusLineNC  = { fg = colors.muted },
     -- StatusLineTerm
     -- StatusLineTermNC
-    TabLine       = { bg = colors.bg_dark2 },
+    TabLine       = { bg = colors.bg_light },
     TablineFill   = { link = "TabLine" },
     TabLineSel    = { bg = colors.bg },
     -- Terminal
