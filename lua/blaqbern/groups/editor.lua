@@ -33,7 +33,7 @@ M.setup = function(colors)
     MatchParen    = { fg = colors.accent1 , bold = true },
     MessageWindow = todo_hl,
     ModeMsg       = { fg = colors.accent2 },
-    MsgArea       = { bg = colors.bg_dark1, fg = colors.fg },
+    MsgArea       = { bg = colors.bg_light1, fg = colors.keyword },
     MoreMsg       = todo_hl,
     NonText       = { fg = colors.black },
     Normal        = { fg = colors.fg, bg = colors.bg },
