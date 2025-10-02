@@ -1,7 +1,7 @@
 local M = {}
 
 function M.setup(opts)
-  vim.cmd("hi clear")
+  vim.cmd[[hi clear]]
 
   vim.o.background = "dark"
   vim.o.termguicolors = true
