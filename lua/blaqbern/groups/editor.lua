@@ -63,7 +63,7 @@ M.setup = function(colors)
     -- StatusLineTermNC
     TabLine       = { bg = colors.bg_light1, fg = colors.muted },
     TablineFill   = { link = "TabLine" },
-    TabLineSel    = { bg = colors.bg },
+    TabLineSel    = { bg = colors.bg, fg = colors.fg_alt },
     -- Terminal
     Title         = { fg = colors.accent3_alt, bold = true },
     Visual        = { bg = colors.bg_light2 },
