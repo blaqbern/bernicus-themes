@@ -33,7 +33,7 @@ M.setup = function(colors)
     MatchParen    = { fg = colors.accent1 , bold = true },
     MessageWindow = todo_hl,
     ModeMsg       = { fg = colors.accent2 },
-    MsgArea       = { bg = colors.bg_light1, fg = colors.keyword },
+    MsgArea       = { bg = colors.bg_dark2, fg = colors.keyword },
     MoreMsg       = todo_hl,
     NonText       = { fg = colors.black },
     Normal        = { fg = colors.fg, bg = colors.bg },
@@ -61,8 +61,8 @@ M.setup = function(colors)
     StatusLineNC  = { fg = colors.muted },
     -- StatusLineTerm
     -- StatusLineTermNC
-    TabLine       = { bg = colors.bg_light1, fg = colors.muted },
-    TablineFill   = { link = "TabLine" },
+    TabLine       = { bg = colors.bg_light1, fg = colors.bg_dark2 },
+    TablineFill   = { bg = colors.bg_dark2 },
     TabLineSel    = { bg = colors.bg, fg = colors.fg_alt },
     -- Terminal
     Title         = { fg = colors.accent3_alt, bold = true },
